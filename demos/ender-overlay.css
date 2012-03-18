@@ -1,0 +1,148 @@
+.ender-overlay {
+	display: none;
+	border: 1px solid #bbb;
+	background: #efefef;
+	background: -moz-linear-gradient(top, #efefef 0%, #bbb 100%);
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0%,#efefef),
+		color-stop(100%,#bbb)
+	);
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbb 100%);
+	background: -o-linear-gradient(top, #efefef 0%,#bbb 100%);
+	background: -ms-linear-gradient(top, #efefef 0%,#bbb 100%);
+	background: linear-gradient(top, #efefef 0%,#bbb 100%);
+
+	-webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,.4);
+	-moz-box-shadow: 0 0 15px 0 rgba(0,0,0,.4);
+	box-shadow: 0 0 15px 0 rgba(0,0,0,.4);
+}
+
+.ender-overlay .close-button {
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	top: -10px;
+	right: -10px;
+
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 24px;
+	text-decoration: none;
+
+	background: #333;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+
+	margin: 0;
+
+	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+	-moz-box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+	box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+	cursor: pointer;
+
+	border: 2px solid #fff;
+}
+
+.ender-overlay img,
+.ender-overlay iframe,
+.ender-overlay object,
+.ender-overlay embed {
+	display: block;
+}
+
+/* =============== HTML ============== */
+
+.overlay-html {
+	width: 800px;
+	position: relative;
+}
+
+.overlay-html img {
+	float: left;
+	border-right: 2px solid #bbb;
+}
+
+.overlay-html div {
+	float: left;
+	width: 278px;
+	padding: 10px;
+}
+
+.overlay-html h2 {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.overlay-html h3 {
+	font-size: 13px;
+	margin: 18px 0 0;
+}
+
+.overlay-html p,
+.overlay-html ul {
+	margin: 5px 0 15px;
+}
+
+.overlay-html ul {
+	padding: 0;
+}
+
+.overlay-html li {
+	display: inline;
+}
+
+.overlay-html li::after {
+	content: ",";
+}
+
+.overlay-html li:last-child::after {
+	content: "";
+}
+
+/* =============== Image / iFrame / flash ============== */
+
+.overlay-image,
+.overlay-iframe {
+	width: 500px;
+}
+
+.overlay-flash {
+	width: 420px;
+}
+
+.overlay-vimeo {
+	width: 601px;
+}
+
+/* =============== Modal / AJAX ============== */
+
+.overlay-modal,
+.overlay-ajax {
+	width: 450px;
+	padding: 15px 25px;
+}
+
+.overlay-modal p {
+	margin: 10px 0;
+}
+
+.overlay-ajax > a {
+	float: left;
+	margin: 0 15px 10px 0;
+}
+
+.overlay-ajax h1 {
+	margin: 0 0 15px;
+}
+
+.overlay-ajax p {
+	margin: 0 0 10px;
+}
+
+
